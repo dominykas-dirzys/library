@@ -1,0 +1,276 @@
+{
+	"info": {
+		"_postman_id": "4c55ebd0-00d0-4554-ad41-d42871ede0fa",
+		"name": "library",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "getAllBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/library",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"library"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBookById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/library/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"library",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBooksByName",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/library/filter_by_name/sword",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"library",
+						"filter_by_name",
+						"sword"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBooksByAuthor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/library/filter_by_author/martin",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"library",
+						"filter_by_author",
+						"martin"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBooksByCategory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/library/filter_by_category/epic",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"library",
+						"filter_by_category",
+						"epic"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBooksByIsbn",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/library/filter_by_isbn/00",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"library",
+						"filter_by_isbn",
+						"00"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getBooksByLanguage",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/library/filter_by_language/Eng",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"library",
+						"filter_by_language",
+						"Eng"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "saveBook",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\": \"Baptism of Fire\",\r\n    \"author\": \"Andrzej Sapkowski\",\r\n    \"category\": \"Fantasy\",\r\n    \"language\": \"English\",\r\n    \"publicationDate\": \"2014-03-06\",\r\n    \"isbn\": \"978-0-575-09096-5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/library",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"library"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteBook",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/library/11",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"library",
+						"11"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getTakenBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/library/taken_books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"library",
+						"taken_books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAvailableBooks",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/library/available_books",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"library",
+						"available_books"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "takeABook",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/users/1/take/9/2",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"users",
+						"1",
+						"take",
+						"9",
+						"2"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
